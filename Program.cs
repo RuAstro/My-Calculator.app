@@ -1,52 +1,41 @@
 ﻿using System.Net;
+using System.Numerics;
 
 internal class Program
 {
+
     static void EnterValues(int numberOfValues, out double num1, out double num2, out double num3, out double num4)
+    
 {
-    num1 = 0;
-    num2 = 0;
-    num3 = 0;
-    num4 = 0;
+    values = new double[numberOfValues];
+    operators = new char[numberOfValues - 1];
+
 
     Console.WriteLine($"Enter 1st value:");
-    num1 = Convert.ToDouble(Console.ReadLine());
+    values[0] = Convert.ToDouble(Console.ReadLine());
 
-    for (int i = 2; i <= numberOfValues; i++)
-    {
-        Console.WriteLine($"Enter operator (+, -, *, /): ");
-        char operation = Convert.ToChar(Console.ReadLine());
 
-        Console.WriteLine($"Enter {i} value:");
-        double value = Convert.ToDouble(Console.ReadLine());
-
-        switch (i)
+    for (int i = 1; i < numberOfValues; i++)
         {
-            case 2:
-                num2 = value;
-                break;
-            case 3:
-                num3 = value;
-                break;
-            case 4:
-                num4 = value;
-                break;
-            default:
-                break;
+            Console.WriteLine($"Enter operator (+, -, *, /): ");
+            operators[i - 1] = Convert.ToChar(Console.ReadLine());
+
+            Console.WriteLine($"Enter {i + 1} value:");
+            values[i] = Convert.ToDouble(Console.ReadLine());
         }
     }
-}
+
 
     private static void Main(string[] args)
     {
-        double num1 = 0;
-        double num2 = 0;
-        double num3 = 0;
-        double num4 = 0;
+        // double num1 = 0;
+        // double num2 = 0;
+        // double num3 = 0;
+        // double num4 = 0;
+        // double result = 0;
+        double[] values;
+        char operators = ' ';
         double result = 0;
-        char operation1 = ' ';
-        char operation2 = ' ';
-        char operation3 = ' ';
        
 
         Console.WriteLine("Calculator Program");
@@ -55,114 +44,48 @@ internal class Program
         Console.WriteLine("How many value numbers do you want to use?" + " Note: 2 Values = 1 operator.");
         int numberOfValues = Convert.ToInt32(Console.ReadLine());
 
-         if (numberOfValues == 2)
-         {
-             EnterValues(numberOfValues, out num1, out num2, out num3, out num4);
-         }
 
-    /*/     else if (numberOfValues == 3)
-         {
-            Console.WriteLine("Enter 1st value:");
-            num1 = Convert.ToDouble(Console.ReadLine());
-
-             Console.WriteLine("Enter operator (+, -, *, /): ");
-             operation2 = Convert.ToChar(Console.ReadLine());
-
-            Console.WriteLine("Enter 2nd value:");
-            num2 = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Enter operator (+, -, *, /): ");
-            operation3 = Convert.ToChar(Console.ReadLine());
-
-            Console.WriteLine("Enter 3rd value:");
-            num3 = Convert.ToDouble(Console.ReadLine());
-         }
-
-         else if (numberOfValues == 4)
-         {
-            Console.WriteLine("Enter 1st value:");
-            num1 = Convert.ToDouble(Console.ReadLine());
-
-             Console.WriteLine("Enter operator (+, -, *, /): ");
-             char operation4;
-             Console.ReadLine();
-
-            Console.WriteLine("Enter 2nd value:");
-            num2 = Convert.ToDouble(Console.ReadLine());
-
-             Console.WriteLine("Enter operator (+, -, *, /): ");
-              char operation5; 
-             Console.ReadLine();
-
-            Console.WriteLine("Enter 3rd value:");
-            num3 = Convert.ToDouble(Console.ReadLine()); 
-
-             Console.WriteLine("Enter operator (+, -, *, /): ");
-             char operation6;
-             Console.ReadLine();
-
-            Console.WriteLine("Enter 4th value:");
-            num4 = Convert.ToDouble(Console.ReadLine()); 
-         } */
-
-
-         switch (numberOfValues)
+        if (numberOfValues < 2 || numberOfValues > 100)
         {
-            case 2:
-                switch (operation1)
-                {
-                    case '+':
-                        result = num1 + num2;
-                        break;
-                    case '-':
-                        result = num1 - num2;
-                        break;
-                    case '*':
-                        result = num1 * num2;
-                        break;
-                    case '/':
-                        result = num1 / num2;
-                        break;
-                    default:
-                        break;
-                }
-                break;
-         }
+            Console.WriteLine("Invalid number of values. Please enter a number between 2 and 100.");
+            return;
+        }
 
+        EnterValues(numberOfValues, out values, out operators);
 
+          result = values[0];
 
-        switch (operation2)
-         {
-            case  '+':
-                result = num1 + num2 + num3;
+          for (int i = 0; i < numberOfValues - 1; i++)
+        {
+            switch (operators[i])
+            {
+                case '+':
+                    result += values[i + 1];
+                    break;
+                case '-':
+                    result -= values[i + 1];
+                    break;
+                case '*':
+                    result *= values[i + 1];
+                    break;
+                case '/':
+                    if (values[i + 1] != 0)
+                    {
+                        result /= values[i + 1];
+                    }
+                    else
+                    {
+                        Console.WriteLine("Error: Division by zero.");
+                        return;
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Invalid operator.");
+                    return;
+            }
+        }
 
-                break;
-
-            case  '-':
-                result = num1 - num2 - num3;
-                break;
-
-            case  '*':
-                result = num1 * num2 * num3;
-                break;
-
-            case  '/':
-                result = num1 / num2 / num3;
-                break;
-
-            default:
-            break;
-         }
-
-
-
-
-
-        Console.WriteLine($"Your result: {num1} {operation1} {num2} = {result}");
-
-
-
-
+        Console.WriteLine($"Your result: {(" ", values)} = {result}");
         Console.ReadKey(); 
     }
 }
