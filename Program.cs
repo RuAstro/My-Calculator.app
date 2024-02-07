@@ -34,7 +34,7 @@ internal class Program
         // double num4 = 0;
         // double result = 0;
         double[] values;
-        char operators;
+        char[] operators;
         double result = 0;
        
 
