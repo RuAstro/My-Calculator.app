@@ -89,10 +89,11 @@ internal class Program
 
           Console.WriteLine("Would you like to do another calculation? (Yes, No): ");
 
-         while 
+         if
             (Console.ReadLine().Equals("Yes", StringComparison.OrdinalIgnoreCase));
 
-            Console.WriteLine("Okay Bye!");
+         else
+             Console.WriteLine("Okay Bye!");
 
         Console.ReadKey(); 
     }

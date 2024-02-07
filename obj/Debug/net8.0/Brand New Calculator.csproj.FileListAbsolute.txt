@@ -21,3 +21,10 @@ C:\Users\User\Desktop\Brand New Calculator\obj\Debug\net8.0\Brand New Calculator
 C:\Users\User\Desktop\Brand New Calculator\obj\Debug\net8.0\Brand New Calculator.dll
 C:\Users\User\Desktop\Brand New Calculator\obj\Debug\net8.0\refint\Brand New Calculator.dll
 C:\Users\User\Desktop\Brand New Calculator\obj\Debug\net8.0\Brand New Calculator.pdb
+C:\Users\User\Desktop\Brand New Calculator\bin\Debug\net8.0\Brand New Calculator.exe
+C:\Users\User\Desktop\Brand New Calculator\bin\Debug\net8.0\Brand New Calculator.deps.json
+C:\Users\User\Desktop\Brand New Calculator\bin\Debug\net8.0\Brand New Calculator.runtimeconfig.json
+C:\Users\User\Desktop\Brand New Calculator\bin\Debug\net8.0\Brand New Calculator.dll
+C:\Users\User\Desktop\Brand New Calculator\bin\Debug\net8.0\Brand New Calculator.pdb
+C:\Users\User\Desktop\Brand New Calculator\obj\Debug\net8.0\Brand New Calculator.genruntimeconfig.cache
+C:\Users\User\Desktop\Brand New Calculator\obj\Debug\net8.0\ref\Brand New Calculator.dll
