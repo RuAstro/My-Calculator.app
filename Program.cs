@@ -7,6 +7,7 @@ internal class Program
     static void EnterValues(int numberOfValues, out double[] values, out char[] operators)
     
 {
+    
     values = new double[numberOfValues];
     operators = new char[numberOfValues - 1];
 
@@ -28,14 +29,10 @@ internal class Program
 
     private static void Main(string[] args)
     {
-        // double num1 = 0;
-        // double num2 = 0;
-        // double num3 = 0;
-        // double num4 = 0;
-        // double result = 0;
         double[] values;
         char[] operators;
         double result = 0;
+        bool runProgram = false;
        
 
         Console.WriteLine("Calculator Program");
@@ -85,15 +82,22 @@ internal class Program
             }
         }
 
-        Console.WriteLine($"Your result: {string.Join(" ", values)} = {result}");
+        Console.WriteLine($"Your result: = {result}");
 
           Console.WriteLine("Would you like to do another calculation? (Yes, No): ");
 
-         if
-            (Console.ReadLine().Equals("Yes", StringComparison.OrdinalIgnoreCase));
+         if (Console.ReadLine() == "Yes")
+         {
+            runProgram = true;
+         }
+    
+           // (Console.ReadLine().Equals("Yes", StringComparison.OrdinalIgnoreCase));
 
          else
              Console.WriteLine("Okay Bye!");
+
+
+             
 
         Console.ReadKey(); 
     }
