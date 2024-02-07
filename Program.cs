@@ -73,7 +73,6 @@ internal class Program
                     else
                     {
                         Console.WriteLine("Error: Division by zero.");
-                        return;
                     }
                     break;
                 default:
