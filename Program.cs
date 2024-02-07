@@ -38,13 +38,14 @@ internal class Program
         Console.WriteLine("Calculator Program");
         Console.WriteLine("--------------------");
 
-        Console.WriteLine("How many value numbers do you want to use?" + " Note: 2 Values = 1 operator.");
+        Console.WriteLine("How many value numbers do you want to use?" + " Note: Only 2 - 100 values.");
         int numberOfValues = Convert.ToInt32(Console.ReadLine());
 
 
         if (numberOfValues < 2 || numberOfValues > 100)
         {
-            Console.WriteLine("Invalid number of values. Please enter a number between 2 and 100.");
+            Console.WriteLine("Invalid number of values.");
+            return;
         }
 
         EnterValues(numberOfValues, out values, out operators);
