@@ -4,7 +4,7 @@ using System.Numerics;
 internal class Program
 {
 
-    static void EnterValues(int numberOfValues, out double num1, out double num2, out double num3, out double num4)
+    static void EnterValues(int numberOfValues, out double[] values, out char[] operators)
     
 {
     values = new double[numberOfValues];
@@ -34,7 +34,7 @@ internal class Program
         // double num4 = 0;
         // double result = 0;
         double[] values;
-        char operators = ' ';
+        char operators;
         double result = 0;
        
 
@@ -85,7 +85,15 @@ internal class Program
             }
         }
 
-        Console.WriteLine($"Your result: {(" ", values)} = {result}");
+        Console.WriteLine($"Your result: {string.Join(" ", values)} = {result}");
+
+          Console.WriteLine("Would you like to do another calculation? (Yes, No): ");
+
+         while 
+            (Console.ReadLine().Equals("Yes", StringComparison.OrdinalIgnoreCase));
+
+            Console.WriteLine("Okay Bye!");
+
         Console.ReadKey(); 
     }
 }

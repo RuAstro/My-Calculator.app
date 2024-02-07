@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Brand New Calculator\\Brand New Calculator.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Brand New Calculator\\Brand New Calculator.csproj",
       "projectName": "Brand New Calculator",
-      "projectPath": "C:\\Brand New Calculator\\Brand New Calculator.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\Brand New Calculator\\Brand New Calculator.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Brand New Calculator\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Brand New Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

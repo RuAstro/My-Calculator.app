@@ -13,3 +13,11 @@ C:\Brand New Calculator\obj\Debug\net8.0\refint\Brand New Calculator.dll
 C:\Brand New Calculator\obj\Debug\net8.0\Brand New Calculator.pdb
 C:\Brand New Calculator\obj\Debug\net8.0\Brand New Calculator.genruntimeconfig.cache
 C:\Brand New Calculator\obj\Debug\net8.0\ref\Brand New Calculator.dll
+C:\Users\User\Desktop\Brand New Calculator\obj\Debug\net8.0\Brand New Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Brand New Calculator\obj\Debug\net8.0\Brand New Calculator.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Brand New Calculator\obj\Debug\net8.0\Brand New Calculator.AssemblyInfo.cs
+C:\Users\User\Desktop\Brand New Calculator\obj\Debug\net8.0\Brand New Calculator.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Brand New Calculator\obj\Debug\net8.0\Brand New Calculator.sourcelink.json
+C:\Users\User\Desktop\Brand New Calculator\obj\Debug\net8.0\Brand New Calculator.dll
+C:\Users\User\Desktop\Brand New Calculator\obj\Debug\net8.0\refint\Brand New Calculator.dll
+C:\Users\User\Desktop\Brand New Calculator\obj\Debug\net8.0\Brand New Calculator.pdb

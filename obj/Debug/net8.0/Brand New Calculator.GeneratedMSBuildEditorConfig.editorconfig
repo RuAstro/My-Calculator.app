@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Brand_New_Calculator
-build_property.ProjectDir = C:\Brand New Calculator\
+build_property.ProjectDir = C:\Users\User\Desktop\Brand New Calculator\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
