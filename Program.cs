@@ -45,7 +45,6 @@ internal class Program
         if (numberOfValues < 2 || numberOfValues > 100)
         {
             Console.WriteLine("Invalid number of values. Please enter a number between 2 and 100.");
-            return;
         }
 
         EnterValues(numberOfValues, out values, out operators);
