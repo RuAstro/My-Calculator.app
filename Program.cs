@@ -23,11 +23,11 @@ internal class Program
         }
     }
 
-    //  static void StoreInMemory(double value)
-    // {
-    //     Memory = value;
-    //     Console.WriteLine($"Value {value} stored in memory.");
-    // }
+      static void StoreInMemory(double value)
+     {
+         StoreInMemory = value;
+         Console.WriteLine($"Value {value} stored in memory.");
+     }
 
 
     public static void Main(string[] args)
@@ -80,7 +80,7 @@ internal class Program
                     }
                     else
                     {
-                        Console.WriteLine("Error: Division by zero will not execude.");
+                        Console.WriteLine("Error: Division by zero will not execute.");
                     }
                     break;
                 default:
@@ -88,7 +88,14 @@ internal class Program
                     return;
             }
         }
-        Console.WriteLine($"Your result: = {result}");
+            Console.WriteLine($"Your result: = {result}");
+
+            Console.WriteLine("Do you want to store the result in memory? (Yes, No): ");
+            if (Console.ReadLine().Equals("Yes", StringComparison.OrdinalIgnoreCase))
+            {
+                StoreInMemory(result);
+            }
+
 
           Console.WriteLine("Would you like to do another calculation? (Yes, No): ");
 
