@@ -3,8 +3,6 @@ using System.Numerics;
 
 internal class Program
 {
-    static double memory = 0;
-
     static void EnterValues(int numberOfValues, out double[] values, out char[] operators)
     {
         values = new double[numberOfValues];
@@ -23,7 +21,7 @@ internal class Program
 
         }
     }
-
+      static double memory = 0;
       static void StoreInMemory(double value)
      {
          memory = value;
